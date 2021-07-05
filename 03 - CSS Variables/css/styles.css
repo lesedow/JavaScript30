@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* Base Reset */
+:root {
+	--base-font: 'Montserrat', sans-serif;
+	--base: #282828;
+	--blur: 0px;
+	--spacing: 2px;
+}
+
+body {
+	font-family: var(--base-font);
+	font-weight: 300;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.controls {  
+  padding: 2rem;
+  background-color: #282828;
+  color: white;
+}
+
+input {
+  width: 100%;
+  display: block;
+}
+
+img {
+	width: 680px;
+  height: 340px;
+  background-color: var(--base);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
